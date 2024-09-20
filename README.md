@@ -4,4 +4,5 @@
 3. 【Python錦囊㊙️技3】One liners
 4. 【Python錦囊㊙️技4】函數式程式設計(Functional Programming)
 5. 【Python錦囊㊙️技5】來寫一個直譯器(Interpreter)吧!
+6. 【Python錦囊㊙️技6】AOP vs. 裝飾器(Decorator)
 
