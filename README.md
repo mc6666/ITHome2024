@@ -5,6 +5,6 @@
 4. 【Python錦囊㊙️技4】函數式程式設計(Functional Programming)
 5. 【Python錦囊㊙️技5】來寫一個直譯器(Interpreter)吧!
 6. 【Python錦囊㊙️技6】AOP vs. 裝飾器(Decorator)
-7. 【Python錦囊㊙️技7】再談裝飾器(Decorator)
+7. 【Python錦囊㊙️技7】裝飾器(Decorator)深入研究
 8. 【Python錦囊㊙️技8】工作日誌(Log)應用實務及監視器
 
