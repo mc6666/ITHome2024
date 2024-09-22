@@ -1,7 +1,6 @@
 from datetime import datetime
 import os, logging
-
-logging.error("錯誤") # 在設定之前先寫入訊息
+import lib1
 
 # 建立log資料夾
 os.makedirs('log', exist_ok=True)  # Create the directory if it doesn't exist
@@ -20,3 +19,6 @@ logging.info("資訊")
 logging.warning("警告")
 logging.error("錯誤")
 logging.critical("關鍵資訊")
+
+# 測試外部模組的函數
+lib1.test1()
