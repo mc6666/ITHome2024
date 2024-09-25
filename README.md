@@ -7,4 +7,7 @@
 6. 【Python錦囊㊙️技6】AOP vs. 裝飾器(Decorator)
 7. 【Python錦囊㊙️技7】裝飾器(Decorator)深入研究
 8. 【Python錦囊㊙️技8】工作日誌(Log)應用實務及監視器
+9. 【Python錦囊㊙️技9】例外處理(Exception)實務
+10. 【Python錦囊㊙️技10】OOA、OOD and OOP
+11. 【Python錦囊㊙️技11】OOP 實作(1) -- 入門
 
