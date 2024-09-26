@@ -11,4 +11,5 @@
 10. 【Python錦囊㊙️技10】OOA、OOD and OOP
 11. 【Python錦囊㊙️技11】OOP 實作(1) -- 入門
 12. 【Python錦囊㊙️技12】OOP 實作(2) -- 遊戲開發
+13. 【Python錦囊㊙️技13】OOP 實作(3)  -- 資料庫ORM
 
