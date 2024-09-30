@@ -3,7 +3,7 @@ from .models import *
 from django.contrib.auth.decorators import login_required
 from django.db.models import Count
 from dataclasses import dataclass
-from icecream import ic 
+# from icecream import ic 
 
 @login_required()
 def index(request):
@@ -143,7 +143,7 @@ def vote_summary(request, poll_id):
                                 total=item['total']
                                 )
         vote_result.append(vote_count)
-    ic(vote_result)
+    # ic(vote_result)
     
     
     context = {"poll": poll, "choice_list":choice, "vote_result":vote_result}
