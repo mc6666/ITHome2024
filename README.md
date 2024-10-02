@@ -12,4 +12,9 @@
 11. 【Python錦囊㊙️技11】OOP 實作(1) -- 入門
 12. 【Python錦囊㊙️技12】OOP 實作(2) -- 遊戲開發
 13. 【Python錦囊㊙️技13】OOP 實作(3)  -- 資料庫ORM
+14. 【Python錦囊㊙️技14】資料庫設計準則 (Schema design)
+15. 【Python錦囊㊙️技15】淺談網頁開發架構 (MVC、MVT、MVVM、MVP)
+16. 【Python錦囊㊙️技16】Django網頁程式完整範例
+17. 【Python錦囊㊙️技17】單元測試(Unit Testing)入門
+18. 【Python錦囊㊙️技18】單元測試(Unit Testing)進階篇
 
