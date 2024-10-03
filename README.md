@@ -17,4 +17,6 @@
 16. 【Python錦囊㊙️技16】Django網頁程式完整範例
 17. 【Python錦囊㊙️技17】單元測試(Unit Testing)入門
 18. 【Python錦囊㊙️技18】單元測試(Unit Testing)進階篇
+19. 【Python錦囊㊙️技19】ChatGPT如何提升開發團隊的生產力(1)
+20. 【Python錦囊㊙️技19】ChatGPT如何提升開發團隊的生產力(2)
 
