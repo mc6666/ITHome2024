@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>統計:{{ poll.name }}</h1>
+    </br></br>
+    {% if summary %}
+        <div class='container'>
+        <div class='col-4'>
+            <table class="table table-striped table-bordered table-hover">
+              <tr>
+                <th>訂單編號</th>
+                <th>總金額</th>
+              </tr>
+            {% for order in summary %}
+              <tr>
+                <td>{{ order.orderid }}</td>
+                <td>{{ order.total|floatformat:2 }}</td>
+              </tr>
+            {% endfor %}
+            </table>
+        </div>
+        </div>
+    {% else %}
+        <p>No data are available.</p>
+    {% endif %}
+
+{% endblock %}
