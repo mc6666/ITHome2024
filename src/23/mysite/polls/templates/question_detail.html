@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>問題詳細資料</h1>
+    <form action="/poll/question/update/" method="post" class="form col-6">
+       {% csrf_token %}
+      <input type="hidden" id="id" name="id" value="{{ question.id }}">
+      <label for="seq_no">序號:</label>
+      <input type="text" id="seq_no" name="seq_no" value="{{ question.seq_no }}" 
+        class="form-control">
+      <label for="question_text">問題說明:</label>
+      <input type="text" id="question_text" name="question_text" value="{{ question.question_text }}" 
+        class="form-control">
+      <div class="form-check">
+          <input type="checkbox" id="is_optional" name="is_optional" 
+           {{ question.is_optional|yesno:"checked, unchecked" }} class="form-check-input">
+          <label class="form-check-label" for="is_optional">是否為選擇性問題:</label>
+      </div>
+      <input type="submit" value="更正">
+    </form>    
+    </br></br>
+    <a href="/poll/choice/insert/{{ question.id }}/">新增答案選項</a>
+    <a href="/poll/">回上頁</a>
+    {% if question.choice_set %}
+            <table class="table table-striped table-bordered table-hover">
+              <tr>
+                <th>序號</th>
+                <th>答案選項</th>
+                <th colspan="2">修改/刪除</th>
+              </tr>
+            {% for choice in question.choice_set.all|dictsort:"seq_no" %}
+              <tr>
+                <td>{{ choice.seq_no }}</td>
+                <td>{{ choice.choice_text }}</td>
+                <td><a href="/poll/choice/{{ choice.id }}">修改</a></td>
+                <td><a href="/poll/choice/delete/{{ choice.id }}"
+                 onclick="return confirm('確定要刪除嗎?');">刪除</a></td>
+              </tr>
+            {% endfor %}
+            </table>
+    {% else %}
+        <p>No choices are available.</p>
+    {% endif %}
+{% endblock %}

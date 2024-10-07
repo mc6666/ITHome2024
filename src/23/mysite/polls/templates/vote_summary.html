@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>投票統計:{{ poll.name }}</h1>
+    </br></br>
+    {% if vote_result %}
+            <table class="table table-striped table-bordered table-hover">
+              <tr>
+                <th>序號</th>
+                <th>候選人</th>
+                <th>票數</th>
+              </tr>
+            {% for choice in vote_result %}
+              <tr>
+                <td>{{ choice.choice_no }}</td>
+                <td>{{ choice.choice_text }}</td>
+                <td>{{ choice.total }}</td>
+              </tr>
+            {% endfor %}
+            </table>
+    {% else %}
+        <p>No data are available.</p>
+    {% endif %}
+    <a href="/poll/">回上頁</a>
+
+{% endblock %}

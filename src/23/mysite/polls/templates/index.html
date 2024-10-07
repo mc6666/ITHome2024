@@ -1,0 +1,29 @@
+{% extends "base.html" %} <!-- 套用網頁母版base.html -->
+{% block content %} <!-- 嵌入內容 -->
+    <h1>問卷資料</h1>
+    <a href="/poll/poll/insert">新增問卷</a>
+    {% if poll_list %} <!-- 判斷有無資料 -->
+        <table class="table table-striped table-bordered table-hover">
+          <tr>
+            <th>問卷名稱</th>
+            <th>摘要</th>
+            <th>發行日期</th>
+            <th>投票統計</th>
+            <th colspan="2">修改/刪除</th>
+         </tr>
+      {% for poll in poll_list %} <!-- 迴圈 -->
+          <tr>
+            <td><a href="/poll/{{ poll.id }}/">{{ poll.name }}</a></td>
+            <td>{{ poll.description }}</td>
+            <td>{{ poll.pub_date|date:"Y-m-d" }}</td>
+            <td><a href="/poll/summary/{{ poll.id }}">統計</a></td>
+            <td><a href="/poll/{{ poll.id }}">修改</a></td>
+            <td><a href="/poll/poll/delete/{{ poll.id }}" 
+                onclick="return confirm('確定要刪除嗎?');">刪除</a></td>
+          </tr>
+        {% endfor %}
+        </table>
+    {% else %}
+        <p>No polls are available.</p>
+    {% endif %}
+{% endblock %}

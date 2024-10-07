@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>問卷調查</h1>
+    {% if poll_list %}
+        <table class="table table-striped table-bordered table-hover">
+          <tr>
+            <th>問卷名稱</th>
+            <th>摘要</th>
+            <th>發行日期</th>
+         </tr>
+      {% for poll in poll_list %}
+          <tr>
+            <td><a href="/vote/{{ poll.id }}">{{ poll.name }}</a></td>
+            <td>{{ poll.description }}</td>
+            <td>{{ poll.pub_date|date:"Y-m-d" }}</td>
+          </tr>
+        {% endfor %}
+        </table>
+    {% else %}
+        <p>No polls are available.</p>
+    {% endif %}
+{% endblock %}

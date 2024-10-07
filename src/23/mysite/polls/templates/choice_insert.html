@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>新增答案選項</h1>
+    <form action="/poll/choice/insert/{{ question_id }}/" method="post" class="form col-6">
+       {% csrf_token %}
+      <label for="seq_no">序號:</label>
+      <input type="text" id="seq_no" name="seq_no" class="form-control">
+      <label for="choice_text">答案選項:</label>
+      <input type="text" id="choice_text" name="choice_text" class="form-control"><br />
+      <input type="submit" value="送出">
+    </form>    
+{% endblock %}

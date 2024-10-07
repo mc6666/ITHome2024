@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>新增問題</h1>
+    <form action="/poll/question/insert/{{ poll_id }}/" method="post" class="form col-6">
+       {% csrf_token %}
+      <label for="seq_no">序號:</label>
+      <input type="text" id="seq_no" name="seq_no"" 
+        class="form-control">
+      <label for="question_text">問題說明:</label>
+      <input type="text" id="question_text" name="question_text" class="form-control">
+      <div class="form-check">
+          <input type="checkbox" id="is_optional" name="is_optional" class="form-check-input">
+          <label class="form-check-label" for="is_optional">是否為選擇性問題:</label>
+      </div>
+      <input type="submit" value="送出">
+    </form>    
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>新增問卷資料</h1>
+    <form action="/poll/poll/insert/" method="post" class="form col-6">
+       {% csrf_token %}
+      <label for="name">問卷名稱:</label>
+      <input type="text" id="name" name="name" class="form-control">
+      <label for="description">問卷摘要:</label>
+      <input type="text" id="description" name="description" class="form-control">
+      <label for="pub_date">發行日期:</label>
+      <input  type="date" id="pub_date" name="pub_date" class="form-control"><br>
+      <input type="submit" value="送出">
+    </form>    
+
+{% endblock %}

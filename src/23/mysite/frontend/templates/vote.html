@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>{{ poll.name }} 問卷調查</h1>
+    <form action="/vote/{{ poll.id }}" method="post" class="form col-6">
+       {% csrf_token %}
+        {% for question in poll.question_set.all %}
+          <label>{{ question.seq_no }}. {{ question.question_text }}:</label><br />
+        {% for choice in question.choice_set.all|dictsort:"seq_no" %}
+          <input type="radio" id="c_{{ choice.id }}" 
+                              name="q_{{ question.id }}"  value="{{ choice.seq_no }}" 
+                              class="form-check-input">
+          <label class="form-check-label" 
+                for="c_{{ choice.id }}">{{ choice.choice_text }}</label>
+        {% endfor %}
+        <br /><br />
+        {% endfor %}
+      <br />
+      <input type="submit" value="送出">
+    </form>    
+{% endblock %}
