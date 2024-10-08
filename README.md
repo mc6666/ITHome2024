@@ -19,4 +19,8 @@
 18. 【Python錦囊㊙️技18】單元測試(Unit Testing)進階篇
 19. 【Python錦囊㊙️技19】ChatGPT如何提升開發團隊的生產力(1)
 20. 【Python錦囊㊙️技19】ChatGPT如何提升開發團隊的生產力(2)
+21. 【Python錦囊㊙️技21】快取(Cache)
+22. 【Python錦囊㊙️技22】Redis Cache Server
+23. 【Python錦囊㊙️技23】Python/Django與Redis 整合
+24. 【Python錦囊㊙️技24】微服務 (Microservices) 【1】-- 行事曆實作
 
