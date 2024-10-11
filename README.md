@@ -23,4 +23,7 @@
 22. 【Python錦囊㊙️技22】Redis Cache Server
 23. 【Python錦囊㊙️技23】Python/Django與Redis 整合
 24. 【Python錦囊㊙️技24】微服務 (Microservices) 【1】-- 行事曆實作
+25. 【Python錦囊㊙️技25】微服務 (Microservices) 【2】-- 容器化佈署
+26. 【Python錦囊㊙️技26】微服務 (Microservices) 【3】-- 服務導向架構(SOA)
+27. 【Python錦囊㊙️技27】建構內容管理系統(CMS)
 
