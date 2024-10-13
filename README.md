@@ -27,4 +27,6 @@
 26. 【Python錦囊㊙️技26】微服務 (Microservices) 【3】-- 服務導向架構(SOA)
 27. 【Python錦囊㊙️技27】輕鬆建構內容管理系統(CMS)
 28. 【Python錦囊㊙️技28】輕鬆建構儀表板(Dashboard)
+29. 【Python錦囊㊙️技29】輕鬆建構儀表板(Dashboard) -- 個案模擬
+30. 【Python錦囊㊙️技30】數學程式設計師(Math. Programmer)
 
